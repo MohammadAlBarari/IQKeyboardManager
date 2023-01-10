@@ -181,7 +181,7 @@ public extension IQKeyboardManager {
         showLog("⌨️>>>>> \(#function) started >>>>>", indentation: 1)
         showLog("Notification Object:\(notification.object ?? "NULL")")
 
-        self.optimizedAdjustPosition()
+//        self.optimizedAdjustPosition()
 
         let elapsedTime = CACurrentMediaTime() - startTime
         showLog("⌨️<<<<< \(#function) ended: \(elapsedTime) seconds <<<<<", indentation: -1)
