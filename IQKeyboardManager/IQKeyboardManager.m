@@ -129,6 +129,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 /*******************************************/
 
 @property(nonatomic, strong, nonnull, readwrite) NSMutableSet<Class> *disabledDistanceHandlingClasses;
+@property(nonatomic, strong, nonnull, readwrite) NSMutableSet<Class> *disabledAdjustDistanceHandlingClasses;
 @property(nonatomic, strong, nonnull, readwrite) NSMutableSet<Class> *enabledDistanceHandlingClasses;
 
 @property(nonatomic, strong, nonnull, readwrite) NSMutableSet<Class> *disabledToolbarClasses;
@@ -253,7 +254,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
             //Initializing disabled classes Set.
             strongSelf.disabledDistanceHandlingClasses = [[NSMutableSet alloc] initWithObjects:[UITableViewController class],[UIAlertController class], nil];
             strongSelf.enabledDistanceHandlingClasses = [[NSMutableSet alloc] init];
-            
+            strongSelf.disabledAdjustDistanceHandlingClasses = [[NSMutableSet alloc] init];
             strongSelf.disabledToolbarClasses = [[NSMutableSet alloc] initWithObjects:[UIAlertController class], nil];
             strongSelf.enabledToolbarClasses = [[NSMutableSet alloc] init];
             

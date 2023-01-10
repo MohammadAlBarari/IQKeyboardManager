@@ -260,7 +260,7 @@ extern NSInteger const kIQPreviousNextButtonToolbarTag;
 ///---------------------------------------------
 /// @name Class Level enabling/disabling methods
 ///---------------------------------------------
-
+@property(nonatomic, strong, nonnull, readonly) NSMutableSet<Class> *disabledAdjustDistanceHandlingClasses;
 /**
  Disable distance handling within the scope of disabled distance handling viewControllers classes. Within this scope, 'enabled' property is ignored. Class should be kind of UIViewController. Default is [UITableViewController, UIAlertController, _UIAlertControllerTextFieldViewController].
  */
